@@ -13,29 +13,26 @@ import {
 
 const SORT_OPTIONS = [
   { key: "featured", label: "Featured" },
-  { key: "price-desc", label: "Hourly Rate · High to Low" },
-  { key: "price-asc", label: "Hourly Rate · Low to High" },
   { key: "passengers-desc", label: "Passengers · Most" },
+  { key: "passengers-asc", label: "Passengers · Fewest" },
   { key: "year-desc", label: "Year · Newest" },
 ];
 
 function sortAircraft(list: AircraftWithMedia[], sort: string): AircraftWithMedia[] {
   const copy = [...list];
   switch (sort) {
-    case "price-desc":
-      return copy.sort((a, b) => Number(b.hourly_rate) - Number(a.hourly_rate));
-    case "price-asc":
-      return copy.sort((a, b) => Number(a.hourly_rate) - Number(b.hourly_rate));
     case "passengers-desc":
       return copy.sort((a, b) => b.passengers - a.passengers);
+    case "passengers-asc":
+      return copy.sort((a, b) => a.passengers - b.passengers);
     case "year-desc":
-      return copy.sort((a, b) => b.year - a.year || Number(b.hourly_rate) - Number(a.hourly_rate));
+      return copy.sort((a, b) => b.year - a.year);
     case "featured":
     default:
       return copy.sort(
         (a, b) =>
           Number(b.featured) - Number(a.featured) ||
-          Number(b.hourly_rate) - Number(a.hourly_rate),
+          b.passengers - a.passengers,
       );
   }
 }

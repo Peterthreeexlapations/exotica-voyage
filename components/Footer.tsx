@@ -9,7 +9,17 @@ const departments = [
   { href: "/concierge", label: "Concierge" },
 ];
 
-const visitLinks = ["Miami", "Fort Lauderdale", "Palm Beach"];
+const visitLinks = [
+  "Miami",
+  "Fort Lauderdale",
+  "Palm Beach",
+  "New York",
+  "Chicago",
+  "Monaco",
+  "South of France",
+  "Greece",
+  "St. Barths",
+];
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -23,7 +33,7 @@ export default function Footer() {
             Exotica <span className="italic">Voyage</span> Group
           </p>
           <p className="mt-6 max-w-prose2 text-bone/60 leading-relaxed">
-            A private brokerage across South Florida. Cars, yachts, and aircraft &mdash; arranged in conversation, not at a checkout page.
+            A private brokerage. South Florida, New York, Chicago, the Côte d'Azur, Monaco, Greece, and St. Barths. Cars, yachts, and aircraft &mdash; arranged in conversation, not at a checkout page.
           </p>
         </div>
 
@@ -73,7 +83,7 @@ export default function Footer() {
           <div>
             <Eyebrow>Concierge</Eyebrow>
             <p className="mt-5 font-display text-2xl tracking-tightest text-bone leading-tight">
-              +1 (954)<br />770-2500
+              +1 (305)<br />765-0043
             </p>
             <Link
               href={whatsappLink(whatsappMessages.generic())}

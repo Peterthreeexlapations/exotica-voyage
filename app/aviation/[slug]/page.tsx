@@ -13,7 +13,7 @@ import {
   pickAircraftHero,
 } from "@/lib/aircraft";
 import { whatsappMessages } from "@/lib/whatsapp";
-import { formatRate, formatNumber } from "@/lib/format";
+import { formatNumber } from "@/lib/format";
 import { AIRCRAFT_CATEGORY_LABEL, type SpecRow } from "@/lib/types";
 
 export const revalidate = 60;
@@ -31,7 +31,7 @@ export async function generateMetadata(
   if (!a) return { title: "Not found" };
   return {
     title: `${a.year} ${a.manufacturer} ${a.model}`,
-    description: `${a.year} ${a.manufacturer} ${a.model} — ${AIRCRAFT_CATEGORY_LABEL[a.category]} from ${formatRate(a.hourly_rate)} per hour. Based ${a.base_airport}.`,
+    description: `${a.year} ${a.manufacturer} ${a.model} — ${AIRCRAFT_CATEGORY_LABEL[a.category]} based ${a.base_airport}. Contact for hourly rates and route availability.`,
   };
 }
 
@@ -80,16 +80,13 @@ export default async function AircraftDetailPage(
               </h1>
             </div>
             <div className="md:col-span-4 md:text-right">
-              <p className="font-mono text-[11px] uppercase tracking-widest2 text-bone/40">From</p>
+              <p className="font-mono text-[11px] uppercase tracking-widest2 text-bone/40">Rate</p>
               <p className="mt-2 font-display text-3xl md:text-4xl text-bone tracking-tightest">
-                {formatRate(a.hourly_rate)}
-                <span className="font-mono text-[11px] uppercase tracking-widest2 text-bone/40 ml-2">/ hr</span>
+                Contact for Details
               </p>
-              {a.daily_minimum && (
-                <p className="mt-2 font-mono text-[11px] uppercase tracking-widest2 text-bone/50">
-                  {formatRate(a.daily_minimum)} daily min.
-                </p>
-              )}
+              <p className="mt-2 font-mono text-[11px] uppercase tracking-widest2 text-bone/50">
+                Quoted by route &middot; WhatsApp the concierge
+              </p>
             </div>
           </div>
         </div>

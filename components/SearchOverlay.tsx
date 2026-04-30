@@ -376,7 +376,7 @@ function AircraftRow({
         </>
       }
       meta={`${a.year} · ${AIRCRAFT_CATEGORY_LABEL[a.category]} · ${a.base_airport}`}
-      rate={`${formatRate(Number(a.hourly_rate))} / hr`}
+      rate="Contact for Details"
       onClick={onClick}
     />
   );

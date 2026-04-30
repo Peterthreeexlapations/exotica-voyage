@@ -7,7 +7,7 @@ import { whatsappMessages } from "@/lib/whatsapp";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "WhatsApp the concierge at Exotica Voyage Group. Daily 8 AM – 11 PM ET, after hours by arrangement. Service area: Miami, Fort Lauderdale, Palm Beach.",
+    "WhatsApp the concierge at Exotica Voyage Group. Daily 8 AM – 11 PM ET, after hours by arrangement. Service area: Miami, Fort Lauderdale, Palm Beach, New York, Chicago, Monaco, South of France, Greece, St. Barths.",
 };
 
 export default function ContactPage() {
@@ -26,7 +26,7 @@ export default function ContactPage() {
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <WhatsAppCTA message={whatsappMessages.generic()} label="WhatsApp Concierge" />
             <Link
-              href="mailto:concierge@exoticavoyage.com"
+              href="mailto:PeterIV@exoticavoyage.com"
               className="inline-flex items-center gap-3 px-7 py-4 font-mono text-[11px] uppercase tracking-widest2 text-bone border border-ink-700 hover:border-bronze-300 hover:text-bronze-300 transition-colors duration-300 ease-luxury"
             >
               Email
@@ -42,14 +42,14 @@ export default function ContactPage() {
                 {"— "}WhatsApp
               </p>
               <p className="mt-2 font-display text-2xl tracking-tightest text-bone">
-                +1 (954) 770-2500
+                +1 (305) 765-0043
               </p>
             </div>
             <div>
               <p className="font-mono text-[10px] uppercase tracking-widest2 text-bone/40">
                 {"— "}Email
               </p>
-              <p className="mt-2 text-bone">concierge@exoticavoyage.com</p>
+              <p className="mt-2 text-bone">PeterIV@exoticavoyage.com</p>
             </div>
             <div>
               <p className="font-mono text-[10px] uppercase tracking-widest2 text-bone/40">
@@ -63,6 +63,9 @@ export default function ContactPage() {
                 {"— "}Service Area
               </p>
               <p className="mt-2 text-bone">Miami &middot; Fort Lauderdale &middot; Palm Beach</p>
+              <p className="mt-1 text-bone">New York &middot; Chicago</p>
+              <p className="mt-1 text-bone">Monaco &middot; South of France</p>
+              <p className="mt-1 text-bone">Greece &middot; St. Barths</p>
             </div>
           </div>
         </aside>

@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import type { AircraftWithMedia } from "@/lib/types";
 import { pickAircraftHero } from "@/lib/aircraft";
-import { formatRate } from "@/lib/format";
 import { AIRCRAFT_CATEGORY_LABEL } from "@/lib/types";
 
 export default function AircraftCard({ aircraft }: { aircraft: AircraftWithMedia }) {
@@ -47,11 +46,10 @@ export default function AircraftCard({ aircraft }: { aircraft: AircraftWithMedia
         <div className="mt-6 flex items-end justify-between border-t border-ink-700 pt-4">
           <div>
             <p className="font-mono text-[10px] uppercase tracking-widest2 text-bone/40">
-              From
+              Rate
             </p>
             <p className="mt-1 font-display text-xl text-bone">
-              {formatRate(aircraft.hourly_rate)}
-              <span className="font-mono text-[11px] uppercase tracking-widest2 text-bone/40 ml-2">/ hr</span>
+              Contact for Details
             </p>
           </div>
           <span className="font-mono text-[11px] uppercase tracking-widest2 text-bronze-300 group-hover:text-bronze-200 transition-colors">

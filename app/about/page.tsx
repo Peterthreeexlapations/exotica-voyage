@@ -33,6 +33,12 @@ const locations = [
   { code: "MIA", name: "Miami", body: "Brickell, South Beach, Bal Harbour, Coconut Grove, Star Island. Same-day delivery, often within the hour." },
   { code: "FLL", name: "Fort Lauderdale", body: "Las Olas, Pier 66, the marinas. Yacht-side handoffs are routine. Aircraft from KFXE." },
   { code: "PBI", name: "Palm Beach", body: "Worth Avenue, Breakers, Manalapan. Discreet, by appointment, often unannounced." },
+  { code: "NYC", name: "New York", body: "Manhattan and the Hamptons. Cars, helicopters, and Teterboro departures arranged through the same concierge." },
+  { code: "CHI", name: "Chicago", body: "Gold Coast, Lincoln Park, the lakefront. Ground transport and private aviation from KPWK and Midway." },
+  { code: "MCM", name: "Monaco", body: "Monte-Carlo, Monaco-Ville, Larvotto. Yacht and motoring arrangements coordinated for Grand Prix and Yacht Show weeks." },
+  { code: "NCE", name: "South of France", body: "Cannes, Nice, Saint-Tropez, Antibes. Côte d'Azur charters and private aviation through Nice Côte d'Azur." },
+  { code: "JTR", name: "Greece", body: "Mykonos, Santorini, Athens, the Cyclades. Crewed yacht charters and island-hop helicopter transfers." },
+  { code: "SBH", name: "St. Barths", body: "Gustavia, Saline, Gouverneur. Villa-side handoffs and yacht arrivals through Port de Gustavia." },
 ];
 
 export default function AboutPage() {
@@ -92,7 +98,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-content px-6 lg:px-12">
           <Eyebrow>The Service Area</Eyebrow>
           <h2 className="mt-6 font-display text-4xl md:text-6xl leading-[0.95] tracking-tightest text-bone max-w-3xl">
-            Three coasts. <span className="italic">One number.</span>
+            Two continents. <span className="italic">One number.</span>
           </h2>
           <div className="mt-16 grid gap-8 md:grid-cols-3">
             {locations.map((loc) => (

@@ -29,11 +29,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default:
-      "Exotica Voyage Group — Exotic Car Rentals · Miami, Fort Lauderdale, Palm Beach",
+      "Exotica Voyage Group — Exotic Cars, Yachts, Aviation · South Florida, NYC, Chicago, Monaco, Côte d'Azur, Greece, St. Barths",
     template: "%s · Exotica Voyage Group",
   },
   description:
-    "A private brokerage for exotic car rentals across South Florida. Lamborghini, Ferrari, Rolls-Royce, McLaren, Bentley — delivered, fueled, and arranged in conversation.",
+    "A private brokerage for exotic motoring, yacht charters, and private aviation. South Florida, New York, Chicago, Monaco, Côte d'Azur, Greece, and St. Barths. Lamborghini, Ferrari, Rolls-Royce, McLaren, Bentley — arranged in conversation.",
   openGraph: {
     type: "website",
     siteName: "Exotica Voyage Group",
