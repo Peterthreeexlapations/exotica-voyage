@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: dark;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Sticky header (80px) + category nav (64px) + breathing room (~32px) */
+    scroll-padding-top: 11rem;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink-950 text-bone font-body antialiased;
+    font-feature-settings: "ss01", "ss02", "cv11";
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    @apply bg-bronze-300/30 text-bone;
+  }
+
+  *:focus-visible {
+    @apply outline-none ring-1 ring-bronze-300/70 ring-offset-2 ring-offset-ink-950;
+  }
+
+  /* Belt-and-suspenders: also apply scroll-margin to anchor targets */
+  :target {
+    scroll-margin-top: 11rem;
+  }
+}
+
+@layer utilities {
+  .text-eyebrow {
+    @apply font-mono text-[11px] uppercase tracking-widest2 text-bronze-300;
+  }
+
+  .stagger-200 { animation-delay: 200ms; }
+  .stagger-400 { animation-delay: 400ms; }
+  .stagger-700 { animation-delay: 700ms; }
+  .stagger-1000 { animation-delay: 1000ms; }
+
+  /* Hide scrollbar but keep scrolling */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Prevent text from breaking awkwardly */
+  .text-balance {
+    text-wrap: balance;
+  }
+}
