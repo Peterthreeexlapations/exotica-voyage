@@ -51,7 +51,7 @@ export default function VehicleCard({ vehicle }: { vehicle: VehicleWithMedia }) 
               <span className="font-mono text-[11px] uppercase tracking-widest2 text-bone/40 ml-2">/ day</span>
             </p>
             <p className="mt-2 font-mono text-[9px] uppercase tracking-widest2 text-bronze-300/70">
-              Driver's License
+              Driver&rsquo;s License
             </p>
           </div>
           <span className="font-mono text-[11px] uppercase tracking-widest2 text-bronze-300 group-hover:text-bronze-200 transition-colors">

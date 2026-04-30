@@ -54,7 +54,7 @@ export default function Hero() {
             </h1>
 
             <p className="mt-8 max-w-xl text-base md:text-lg leading-relaxed text-bone/75 animate-fade-up stagger-400">
-              By road, by sea, by air. A private brokerage for exotic motoring, yacht charters, and private aviation. South Florida, New York, Chicago, Monaco, Côte d'Azur, Greece, St. Barths.
+              By road, by sea, by air. A private brokerage for exotic motoring, yacht charters, and private aviation. South Florida, New York, Chicago, Monaco, Côte d&rsquo;Azur, Greece, St. Barths.
             </p>
 
             <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center animate-fade-up stagger-700">

@@ -169,7 +169,7 @@ export default function SearchOverlay() {
                     Search the entire <span className="italic">collection.</span>
                   </p>
                   <p className="mt-2 text-bone/55 text-sm">
-                    Cars, yachts, aircraft, concierge services. Try "Lamborghini," "Sunseeker," or "helipad."
+                    Cars, yachts, aircraft, concierge services. Try &ldquo;Lamborghini,&rdquo; &ldquo;Sunseeker,&rdquo; or &ldquo;helipad.&rdquo;
                   </p>
                 </div>
               )}
@@ -180,7 +180,7 @@ export default function SearchOverlay() {
                     {"— "}No matches
                   </p>
                   <p className="mt-3 font-display text-2xl tracking-tightest text-bone">
-                    Nothing currently listed for "{query}".
+                    Nothing currently listed for &ldquo;{query}&rdquo;.
                   </p>
                   <p className="mt-2 text-bone/55 text-sm">
                     Message the concierge — most of our network is unlisted.

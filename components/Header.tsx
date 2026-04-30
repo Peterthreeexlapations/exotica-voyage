@@ -11,7 +11,6 @@ import {
   Fan,
   Fish,
   Gauge,
-  Helicopter,
   Menu,
   Mountain,
   Plane,
